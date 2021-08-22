@@ -1,0 +1,40 @@
+.minicartQuantityBadge {
+  color: #303030;
+  background: #59ff00;
+}
+
+ .openIconContainer :global(.vtex-button):hover {
+  background: transparent;
+  opacity: 0.9;
+} 
+
+.drawerContent {
+  background: #212121;
+  color: #fff;
+}
+
+.closeIconButton,
+.minicartTitle,
+:global(.vtex-checkout-summary-0-x-summaryItemLabel) {
+  color: #fff;
+}
+
+.summarySmallDisclaimer {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+:global(.vtex-checkout-summary-0-x-price) {
+  color: #59ff00;
+  font-weight: bold;
+}
+
+.minicartCheckoutButton :global(.vtex-button) {
+  background: #59ff00;
+  border: none;
+  color: #212121;
+  font-weight: bold;
+}
+
+.overlay {
+  background: #161616;
+}

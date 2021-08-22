@@ -1,0 +1,31 @@
+{
+  
+  "slider-layout#home": {
+    "children": ["image#banner1", "image#banner2"],
+    "props": {
+      "blockClass": "carousel-banner",
+      "infinite": true,
+      "height":320,
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      }
+    }
+  },
+
+  "image#banner1": {
+    "props": {
+      "blockClass": "banner-image",
+      "maxWidth": "100%",
+      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210822%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210822T052944Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=fa345e7f23fa0e6a4fb443ff1f5fa8b84ae517fe70872ec0cb65b970204bf183"
+    }
+  },
+  "image#banner2":{
+    "props":{
+      "blockClass": "banner-image",
+      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e?response-content-disposition=inline%3B%20filename%3D%22W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png%22%3B%20filename%2A%3DUTF-8%27%27W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210822%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210822T182825Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=fe43232b1d420f5c91bedf21774974e4db9855299c2583319939a94c59212417"
+    }
+  }
+
+}

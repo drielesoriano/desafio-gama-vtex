@@ -1,0 +1,91 @@
+{
+  "store.product": {
+    "children": ["responsive-layout.desktop#product","responsive-layout.mobile#product"]
+  },
+
+  "responsive-layout.desktop#product": {
+    "children": ["flex-layout.row#product-desktop"]
+  },
+
+  "responsive-layout.mobile#product": {
+    "children": ["flex-layout.row#product-mobile"]
+  },
+
+  "flex-layout.row#product-desktop": {
+    "props": {
+      "blockClass": ["product-product", "main-desktop-container"],
+      "marginTop": 6
+    },
+    "children": ["flex-layout.col#product"]
+  },
+  "flex-layout.row#product-mobile": {
+    "props": {
+      "blockClass": ["product-product", "main-desktop-container"],
+      "marginTop": 6
+    },
+    "children": ["flex-layout.col#product"]
+  },
+
+
+  "flex-layout.col#product": {
+    "children": ["flex-layout.row#image", "flex-layout.row#detail","product-description"]
+  },
+
+  "flex-layout.row#image": {
+    "props": {
+      "blockClass": "product-carousel"
+    },
+    "children": ["product-images"]
+  },
+  "product-images": {
+    "props": {
+      "blockClass": "poduct-image-carousel"
+    }
+  },
+  "flex-layout.row#detail": {
+    "children": ["flex-layout.col#prod-left"]
+  },
+  "product-description": {
+    "props": {
+      "blockClass":"product-description"
+    }
+  },
+
+  "flex-layout.col#prod-left": {
+    "props": {
+      "blocksClass": "product-detail"
+    },
+    "children": [
+      "vtex.store-components:product-name",
+      "product-identifier.product",
+      "flex-layout.row#price-bttn"
+    ]
+  },
+
+  "flex-layout.col#right": {
+    "children": []
+  },
+
+  "product-price": {
+    "props": {
+      "blockClass": "blockPrice",
+      "showSavings": false,
+      "showListPrice": false
+    }
+  },
+  "buy-button": {
+    "props": {
+      "blockClass": "block-Buy"
+    }
+  },
+
+  "flex-layout.row#price-bttn": {
+    "children": ["flex-layout.col#price-bttn","flex-layout.col#right"]
+  },
+  "flex-layout.col#price-bttn": {
+    "children": ["product-price", "buy-button"]
+  },
+  "flex-layout.row#qty-sku": {
+    "children": ["product-quantity", "sku-selector"]
+  }
+}

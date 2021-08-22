@@ -1,0 +1,32 @@
+/*estilização slider layout banner*/
+.slideChildrenContainer--carousel-banner {
+  max-width: 918px;
+  margin: 0 auto 20px;
+}
+
+.sliderArrows--carousel-banner {
+  bottom: 0;
+  color: #fff;
+}
+
+ .paginationDotsContainer--carousel-banner {
+  transform: translateY(12px);
+} 
+
+.paginationDot--isActive {
+  background: #59ff00;
+}
+
+/*estilização slider produtos*/
+.sliderLayoutContainer--slider-product {
+  margin-bottom: 20px;
+}
+
+.sliderArrows--slider-product {
+  color: #fff;
+}
+
+.sliderArrows--carousel-banner {
+  width: 30px;
+  transform: translateY(18px);
+}

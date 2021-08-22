@@ -1,0 +1,92 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "children": ["flex-layout.row#footer"]
+  },
+  "flex-layout.row#footer": {
+    "props": {
+      "blockClass": "desktop-footer",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": false,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "footer-spacer",
+      "login",
+      "minicart.v2",
+      "flex-layout.col#suporte",
+      "footer-spacer"
+    ]
+  },
+  "flex-layout.col#suporte": {
+    "children": ["flex-layout.row#suporte"]
+  },
+  "flex-layout.row#suporte": {
+    "props": {
+      "blockClass": "suporte-tab",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": ["flex-layout.col#image", "flex-layout.col#link"]
+  },
+  "flex-layout.col#link": {
+    "children": ["link#suporte"]
+  },
+  "flex-layout.col#image": {
+    "children": ["image#suport"]
+  },
+  "link#suporte": {
+    "props": {
+      "blockClass": ["link-suporte"],
+      "href": "https://api.whatsapp.com/send?phone=5590999998877&text=Ol%C3%A1!",
+      "label": "Suporte",
+      "target": "_blank"
+    }
+  },
+  "image#suport": {
+    "props": {
+      "src": "https://image.flaticon.com/icons/png/512/134/134937.png",
+      "maxWidth": "24px",
+      "link": "https://api.whatsapp.com/send?phone=5590999998877&text=Ol%C3%A1!"
+    }
+  },
+  "login": {
+    "props": {
+      "showIconProfile": "true"
+    }
+  },
+  "footer-spacer": {
+    "props": {
+      "blockClass": "spacer"
+    }
+  },
+
+  /*mobile footer*/
+  "footer-layout.mobile": {
+    "children": ["flex-layout.row#footer"]
+  },
+  "flex-layout.row#footer-mobile": {
+    "props": {
+      "blockClass": "mobile-footer",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "footer-spacer",
+      "login",
+      "minicart.v2",
+      "flex-layout.col#suporte",
+      "footer-spacer"
+    ]
+  }
+}

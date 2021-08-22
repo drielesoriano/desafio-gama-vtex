@@ -1,0 +1,8 @@
+.label--link-suporte,
+.link--link-suporte{
+  color:#fff;
+  font-size: .875rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-left: 12px;
+}

@@ -1,0 +1,94 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "sticky-layout#desktop"
+    ]
+  },
+  "sticky-layout#desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#desktop"]
+    // "children": ["flex-layout.row#desktop","tab-layout#home"]
+  },
+  "flex-layout.row#desktop": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": false,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#search-desktop",
+      "header-spacer",
+      "minicart.v2"
+    ]
+  },  
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo"]
+  },
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/upmedal.png",
+      "width": "80"
+    }
+  },
+  
+  "flex-layout.col#search-desktop": {
+    "props": {
+      "blockClass":"search-desktop"
+    },
+    "children": [
+      "search-bar"
+    ]
+  },
+  "search-bar": {
+    "props": {
+      "blockClass":"search-bar-desktop"
+    }
+  },
+
+
+/*Header Mobile*/
+  "header-layout.mobile": {
+    "children": ["sticky-layout#mobile"]
+  },
+  "sticky-layout#mobile": {
+    "children": ["flex-layout.row#mobile"]
+  },
+  "flex-layout.row#mobile": {
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#search-mobile",
+      "minicart.v2",
+      "header-spacer"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#search-mobile": {
+    "props": {
+      "blockClass": "search-mobile"
+    },
+    "children": [
+      "search-bar"
+    ]
+  }
+}

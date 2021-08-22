@@ -1,0 +1,85 @@
+/* .searchBarContainer {
+   width: 700px; 
+} */
+
+.searchBarContainer :global(.vtex-input-prefix__group) {
+  border: none;
+  border-radius: 0;
+  border-bottom: thin solid #fff;
+}
+
+.searchBarContainer :global(.vtex-input__suffix) {
+  background: transparent;
+}
+
+.searchBarContainer :global(.vtex-styleguide-9-x-input) {
+  background: transparent;
+  color: #fff;
+}
+
+.searchIcon {
+  color: #fff;
+}
+
+/*estilização imagem-banner*/
+.imageElement--banner-image {
+  margin-top: 1rem;
+  border-radius: 20px;
+} 
+
+/*estilização shelf cards dos produtos*/
+:global(.vtex-product-summary-2-x-productBrand) {
+  color: #fff;
+  font-size: 1.25rem;
+  padding: 1rem;
+}
+
+:global(.vtex-product-summary-2-x-element){
+  background-color: #424242;
+}
+
+.price_sellingPrice--blockPrice {
+  color: #59ff00;
+  font-size: 1.625rem;
+}
+
+/*estilização footer*/
+:global(.vtex-store-footer-2-x-footerLayout) {
+  background: #212121;
+}
+
+/*estilização pagina produtos*/
+.productImagesContainer--carousel {
+  max-width: 600px;
+}
+
+.productImageTag--main {
+  max-width: 400px;
+}
+
+.productBrand {
+  margin-top: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.price_className--blockPrice {
+  width: 400px;
+}
+
+.productDescriptionContainer--product-description{
+  background: #424242;
+  color: #fff;
+  padding: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.productDescriptionText--product-description {
+  color: #fff
+}
+
+.container {
+  padding: 0;
+}

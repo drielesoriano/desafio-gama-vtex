@@ -1,0 +1,32 @@
+.containerNormal {
+  padding-top: 16px;
+  background: #424242;
+}
+
+.productNameContainer {
+  margin-left: 16px;
+  font-size: 20px;
+}
+.productBrand {
+  padding: 0 !important;
+}
+
+.buyButtonContainer {
+  padding-bottom: 0 !important;
+}
+
+.buyButton :global(.vtex-button){
+  color: #303030;
+  width: 100%
+}
+
+.priceContainer{
+  padding: 0;
+  align-items: flex-start;
+  margin-left: 16px;
+}
+
+.price_sellingPrice {
+  color: #59ff00;
+  font-weight: bold;
+}

@@ -1,0 +1,12 @@
+.container--layout--query-custom-home {
+  margin-bottom: 20px;
+}
+
+.buttonShowMore :global(.vtex-button){
+  color: #313131;
+  margin-top: 20px;
+}
+
+.searchResultContainer {
+  margin-top: 10px;
+}

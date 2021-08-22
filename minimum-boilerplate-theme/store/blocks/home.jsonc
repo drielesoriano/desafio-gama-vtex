@@ -1,0 +1,36 @@
+{
+  "store.home": {
+    "blocks": ["responsive-layout.desktop", "responsive-layout.mobile"]
+  },
+  /*Responsive layout Desktop*/
+  "responsive-layout.desktop": {
+    "children": ["flex-layout.row#main-desktop"]
+  },
+
+  "flex-layout.row#main-desktop": {
+    "children": ["flex-layout.col#main-desktop"]
+  },
+
+  "flex-layout.col#main-desktop": {
+    "children": [
+      "tab-layout#home","formulario"
+    ]
+  },
+
+  /*Responsive layout Mobile*/
+  "responsive-layout.mobile": {
+    "children": ["flex-layout.row#main-mobile"]
+  },
+
+  "flex-layout.row#main-mobile": {
+    "props": {
+      "blockClass": "main-mobile-container"
+    },
+    "children": ["flex-layout.col#main-mobile"]
+  },
+  "flex-layout.col#main-mobile": {
+    "children": [
+      "tab-layout#home","formulario"
+    ]
+  }
+}

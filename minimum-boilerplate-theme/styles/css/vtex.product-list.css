@@ -1,0 +1,17 @@
+.productName {
+  color: white;
+}
+
+.productPriceContainer,
+.productBrandName,
+.deleteIcon {
+  color: #59ff00;
+}
+
+.productPriceContainer {
+  display: flex;
+}
+
+.productPrice {
+  justify-content: flex-end;
+}
