@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { useCssHandles } from "vtex.css-handles";
+import axios from 'axios';
 
 const CSS_HANDLES = [
   "container",
@@ -16,6 +17,22 @@ const CSS_HANDLES = [
 interface FormularioProps {}
 
 const Formulario: StorefrontFunctionComponent<FormularioProps> = ({}) => {
+  const [nome, setNome] = useState("");
+  const [email, setEmail] = useState("");
+  const [telefone, setTelefone] = useState("");
+
+
+  function cadastrarLead() {
+    let cadastroLead = {
+      "nome": nome,
+      "email": email,
+      "telefone": telefone,
+    };
+
+    const api_url = "https://1wo1p40aq0.execute-api.us-east-2.amazonaws.com/items"
+    axios.put(api_url, cadastroLead)
+  }
+
   const handles = useCssHandles(CSS_HANDLES);
 
   return (
@@ -27,6 +44,8 @@ const Formulario: StorefrontFunctionComponent<FormularioProps> = ({}) => {
             Nome
           </label>
           <input
+            value={nome}
+            onChange={(e) =>setNome(e.currentTarget.value)}
             className={`${handles.input}`}
             id="nome"
             type="text"
@@ -40,6 +59,8 @@ const Formulario: StorefrontFunctionComponent<FormularioProps> = ({}) => {
             E-mail:
           </label>
           <input
+            value={email}
+            onChange={(e) =>setEmail(e.currentTarget.value)}
             className={`${handles.input}`}
             id="email"
             type="email"
@@ -54,6 +75,8 @@ const Formulario: StorefrontFunctionComponent<FormularioProps> = ({}) => {
           </label>
           <input
             className={`${handles.input}`}
+            onChange={(e) =>setTelefone(e.currentTarget.value)}
+            value={telefone}
             id="telefone"
             type="tel"
             name="telefone"
@@ -61,7 +84,11 @@ const Formulario: StorefrontFunctionComponent<FormularioProps> = ({}) => {
           />
         </div>
 
-        <button className={`${handles.bttnSubmit}`} type="submit">
+        <button
+          onClick={cadastrarLead}
+          className={`${handles.bttnSubmit}`}
+          type="submit"
+        >
           Cadastrar
         </button>
       </form>
